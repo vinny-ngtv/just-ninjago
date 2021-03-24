@@ -1,6 +1,20 @@
+/*
+==============================
+        GENERAL STYLE
+==============================
+*/
 :root {
     --header-height: 75px;
     --icon-box-height: 80px;
+
+    --text-1: 48pt;
+    --text-2: 36pt;
+    --text-3: 24pt;
+    --text-4: 18pt;
+
+    --black: #0A0A0A;
+    --white: #F5F5F5;
+    --red: #D13131;
 }
 
 * {
@@ -9,6 +23,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--white);
+}
+
+/*
+=== CLASS
+*/
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -18,7 +39,7 @@
 
 /* header*/
 .header {
-    background-color: #0A0A0A;
+    background-color: var(--black);
     height: var(--header-height);
     width: 100%;
 
@@ -31,14 +52,23 @@
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+/* logo */
+.logo img {
+    margin-left: 30px;
+    height: 40px;
+}
+
+
+/* nav */
 .nav-container {
     display: flex;
 }
 
 .triangle {
-    border-top: var(--icon-box-height) solid #D13131;
+    border-top: var(--icon-box-height) solid var(--red);
     border-left: 50px solid transparent;
     height: var(--icon-box-height);
     width: 0;
@@ -56,11 +86,11 @@
 
     z-index: 10;
 
-    background-color: #D13131;
+    background-color: var(--red);
 }
 
 .icon-container .fa-bars {
-    color: white;
+    color: var(--white);
     font-size: 24pt;
     z-index: 10;
 }
@@ -75,5 +105,5 @@
 
     z-index: 9;
 
-    background-color: #D13131;
+    background-color: var(--red);
 }
