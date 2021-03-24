@@ -7,11 +7,11 @@ const menu = document.getElementById("menu");
 
 btnMenu.addEventListener("click", function () {
     menuContainer.style.width = "100%";
-    menu.style.width = "360px";
+    menu.classList.add("menu-content-opened");
 });
 
 
 btnCloseMenu.addEventListener("click", function () {
     menuContainer.style.width = "0";
-    menu.style.width = "0";
+    menu.classList.remove("menu-content-opened");
 });

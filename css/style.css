@@ -220,6 +220,10 @@ body {
     transition: .5s;
 }
 
+.menu-content-opened {
+    width: 360px;
+}
+
 .menu-header {
     background-color: #D13131;
     display: flex;
