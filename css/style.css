@@ -1,3 +1,8 @@
+:root {
+    --header-height: 75px;
+    --icon-box-height: 80px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +19,7 @@
 /* header*/
 .header {
     background-color: #0A0A0A;
-    height: 80px;
+    height: var(--header-height);
     width: 100%;
 
     position: fixed;
@@ -33,14 +38,14 @@
 }
 
 .triangle {
-    border-top: 85px solid #D13131;
+    border-top: var(--icon-box-height) solid #D13131;
     border-left: 50px solid transparent;
-    height: 85px;
+    height: var(--icon-box-height);
     width: 0;
 }
 
 .icon-container {
-    height: 85px;
+    height: var(--icon-box-height);
     width: 100%;
 
     padding: 0 30px;
@@ -56,7 +61,7 @@
 
 .icon-container .fa-bars {
     color: white;
-    font-size: 30pt;
+    font-size: 24pt;
     z-index: 10;
 }
 
@@ -65,7 +70,7 @@
     top: 0;
     left: 0;
 
-    height: 85px;
+    height: var(--icon-box-height);
     width: 1000px;
 
     z-index: 9;
