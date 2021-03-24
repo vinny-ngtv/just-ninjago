@@ -1,0 +1,74 @@
+/* tablet */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+
+    /* characters*/
+    .characters-content {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: ". char-content char-content";
+    }
+
+    /* curiosities */
+    .curiosities-content {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "cur-content cur-content .";
+    }
+
+}
+
+/* smartphone */
+@media only screen and (max-width: 787px) {
+    :root {
+        --fs-1: 24pt;
+    }
+
+    .mx {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .btn {
+        margin: 40px auto 0 auto;
+    }
+
+    .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    /* intro */
+    .intro .h1 {
+        margin: 60px 0;
+    }
+
+    /* about */
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    /* characters*/
+    .characters-content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "char-content";
+    }
+
+    /* story */
+    .story {
+        text-align: left;
+    }
+
+    .story .p {
+        margin: 0;
+    }
+
+    .story-images {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    /* curiosities */
+    .curiosities-content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "cur-content";
+    }
+}
