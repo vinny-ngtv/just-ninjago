@@ -14,7 +14,7 @@
 /* header*/
 .header {
     background-color: #0A0A0A;
-    height: 90px;
+    height: 80px;
     width: 100%;
 
     position: fixed;
@@ -33,14 +33,14 @@
 }
 
 .triangle {
-    border-top: 95px solid #D13131;
+    border-top: 85px solid #D13131;
     border-left: 50px solid transparent;
-    height: 95px;
+    height: 85px;
     width: 0;
 }
 
 .icon-container {
-    height: 95px;
+    height: 85px;
     width: 100%;
 
     padding: 0 30px;
@@ -65,7 +65,7 @@
     top: 0;
     left: 0;
 
-    height: 95px;
+    height: 85px;
     width: 1000px;
 
     z-index: 9;
