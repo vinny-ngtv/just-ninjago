@@ -19,6 +19,7 @@
 @media only screen and (max-width: 787px) {
     :root {
         --fs-1: 24pt;
+        --fs-3: 18px;
     }
 
     .mx {
@@ -57,7 +58,10 @@
 
     /* intro */
     .intro .h1 {
-        margin: 60px 0;
+        margin: 60px 0 20px 0;
+    }
+    .intro .h3 {
+        margin: 20px 0 60px 0;
     }
 
     /* about */
